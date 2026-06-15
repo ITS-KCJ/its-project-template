@@ -29,6 +29,7 @@ Detalhes e acessos: `docs/ONBOARDING.md`.
 |-----------|----------|
 | `docs/ONBOARDING.md` | Do zero ao primeiro PR |
 | `docs/WORKFLOW.md` | Modo de execução: GSD passo a passo + ordem de PR/GitHub |
+| `docs/apresentacao-gsd.html` | Apresentação visual (treinamento da equipe): GSD + template |
 | `docs/ARCHITECTURE.md` | Visão técnica e decisões |
 | `docs/DEPLOY.md` | Como subir (HML antes de produção) |
 | `docs/TROUBLESHOOTING.md` | Problemas comuns |

@@ -2,6 +2,40 @@
 
 Como trabalhar em {{PROJETO}} do início ao merge. Duas partes que andam juntas: o ciclo GSD (Claude Code) e a ordem de PR no GitHub, sempre sob a política HML-first.
 
+## Visão em diagrama
+
+Da tarefa ao branch (decisão de nível + ciclo GSD):
+
+```mermaid
+flowchart TD
+  T["Tarefa"] --> N{"Nível de risco"}
+  N -->|"1 Trivial"| F["gsd-fast"]
+  N -->|"2 Manutenção"| Q["gsd-quick / gsd-debug"]
+  N -->|"3 Estrutural"| D["gsd-discuss-phase"]
+  D --> P["gsd-plan-phase"]
+  P --> E["gsd-execute-phase"]
+  E --> V["gsd-verify-work"]
+  F --> BR["Branch + PR"]
+  Q --> BR
+  V --> BR
+```
+
+Do branch à produção (pipeline PR/GitHub, HML-first):
+
+```mermaid
+flowchart LR
+  BR["branch feat/*"] --> WK["trabalhar + commits"]
+  WK --> LOC["validar local"]
+  LOC --> HML["homologação .96"]
+  HML --> PR["PR para main"]
+  PR --> CI{"CI verde?"}
+  CI -->|"não"| WK
+  CI -->|"sim"| RV["gsd-code-review"]
+  RV --> MG["merge na main"]
+  MG --> G{"gate + GO do owner?"}
+  G -->|"sim"| PROD["deploy produção"]
+```
+
 ---
 
 ## Parte 1 — Escolher o nível pelo risco
