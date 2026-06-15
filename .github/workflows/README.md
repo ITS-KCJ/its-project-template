@@ -17,7 +17,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       # Backend (exemplo Python)
       # - uses: actions/setup-python@v5
       #   with: { python-version: "3.12" }
@@ -28,5 +28,7 @@ jobs:
       #   with: { node-version: "22" }
       # - run: cd frontend && npm ci && npm run lint && npx vitest run && npm run build
 ```
+
+Use sempre o **major mais recente** de cada action (ex: `actions/checkout@v5`). Desde 16/jun/2026 o GitHub roda os actions em Node 24 por padrão; versões antigas (que rodavam em Node 20) ainda funcionam, mas o GitHub emite aviso de depreciação.
 
 Regra do projeto: **PR com CI vermelho não é revisado** (ver `CONTRIBUTING.md`).
