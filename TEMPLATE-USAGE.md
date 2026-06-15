@@ -22,13 +22,13 @@ Procure e troque em todos os arquivos:
 |-------------|---------|---------|
 | `{{PROJETO}}` | Nome do projeto | LUMEN Voice |
 | `{{DESCRICAO}}` | Uma linha sobre o que faz | PABX multi-cliente |
-| `{{REPO}}` | owner/repo no GitHub | buenojulio/lumen-voice |
+| `{{REPO}}` | owner/repo no GitHub | ITS-KCJ/lumen-voice |
 | `{{DOMINIO}}` | URL de produção | voice.itscs.net |
 | `{{STACK}}` | Stack resumida | FastAPI + Next.js + PostgreSQL |
 | `{{VM_PROD}}` | Host de produção | 10.70.1.92 |
 | `{{VM_HML}}` | Host de homologação | 10.70.1.96 |
 | `{{DEPLOY_CMD}}` | Comando de deploy | docker compose up -d --build |
-| `{{OWNER_GH}}` | Handle do owner no GitHub | @buenojulio |
+| `{{OWNER_GH}}` | Handle do owner ou time no GitHub | @ITS-KCJ/equipe |
 | `{{RUN_LOCAL}}` | Como subir local | docker compose up -d |
 
 Busca rápida pelos placeholders que faltam preencher:
