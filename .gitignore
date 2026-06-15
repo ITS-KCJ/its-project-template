@@ -1,0 +1,32 @@
+# Segredos — NUNCA commitar
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+*.sql
+*.sql.gz
+*.dump
+
+# Dependências
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build / cache
+dist/
+build/
+.next/
+.ruff_cache/
+.pytest_cache/
+.cache/
+coverage/
+
+# IDE / SO
+.DS_Store
+Thumbs.db
+.idea/
+*.swp

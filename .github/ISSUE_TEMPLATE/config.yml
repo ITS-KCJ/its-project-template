@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Incidente em produção
+    url: https://github.com/{{REPO}}/blob/main/docs/runbooks/incidente.md
+    about: Sistema fora do ar ou erro afetando usuários? Siga a runbook e acione o owner.
+  - name: Dúvida de ambiente local
+    url: https://github.com/{{REPO}}/blob/main/docs/TROUBLESHOOTING.md
+    about: Problema para subir o projeto localmente? Veja o troubleshooting antes de abrir issue.

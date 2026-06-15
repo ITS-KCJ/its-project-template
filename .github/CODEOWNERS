@@ -1,0 +1,27 @@
+# CODEOWNERS — {{PROJETO}}
+# Quem é revisado automaticamente por área quando um PR toca os arquivos.
+# Sintaxe: <padrão>  <@usuario ou @org/time>
+# A última regra que casa com o arquivo é a que vale.
+#
+# Substitua {{OWNER_GH}} e adicione handles dos responsáveis por área
+# conforme a equipe crescer (ex.: @org/backend, @org/frontend).
+
+# Padrão geral
+*                       {{OWNER_GH}}
+
+# Backend
+/backend/               {{OWNER_GH}}
+# Migrações de banco: área sensível, revisar com cuidado
+/backend/alembic/       {{OWNER_GH}}
+
+# Frontend
+/frontend/              {{OWNER_GH}}
+
+# Infraestrutura e deploy
+/infra/                 {{OWNER_GH}}
+/docker-compose*.yml    {{OWNER_GH}}
+/.github/               {{OWNER_GH}}
+
+# Documentação
+/docs/                  {{OWNER_GH}}
+*.md                    {{OWNER_GH}}
